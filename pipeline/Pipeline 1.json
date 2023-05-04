@@ -38,14 +38,7 @@
 			{
 				"name": "Notebook",
 				"type": "DatabricksNotebook",
-				"dependsOn": [
-					{
-						"activity": "GetMetadata",
-						"dependencyConditions": [
-							"Completed"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,

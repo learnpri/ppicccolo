@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL TABLE [dbo].[ExternalTable]\n(\n\t CustomerID int,\n\tNameStyle char,\n\tTitle char,\n\tFirstName char,\n\tMiddleName char,\n\tLastName char,\n\tSuffix char,\n\tCompanyName char,\n\tSalesPerson char,\n\tEmailAddress char,\n\tPhone char,\n\tPasswordHash char,\n\tPasswordSalt char,\n\trowguid char,\n\tModifiedDate timestamp,\n  input_filename char,\n  DT_load timestamp\n)\nWITH\n(\n\tLOCATION = '/folder/file',\n\tDATA_SOURCE = [DataSource1],\n\tFILE_FORMAT = [FileFormat1]\n)\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "teste",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
