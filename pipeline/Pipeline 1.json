@@ -57,7 +57,8 @@
 				"typeProperties": {
 					"notebookPath": "/Desafio_Caminhos (1)/Synapse_Move_landing_to_bronze",
 					"baseParameters": {
-						"directory": "diabetes"
+						"source_directory": "empodera",
+						"table_name": "diabetes"
 					}
 				},
 				"linkedServiceName": {
