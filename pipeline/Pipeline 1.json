@@ -55,7 +55,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Desafio_Caminhos (1)/Synapse_Move_landing_to_bronze"
+					"notebookPath": "/Desafio_Caminhos (1)/Synapse_Move_landing_to_bronze",
+					"baseParameters": {
+						"directory": "diabetes"
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "lsAzureDatabricks1",
