@@ -20,7 +20,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_container": "landing",
-							"ds_directory": "empodera"
+							"ds_directory": "empodera/"
 						}
 					},
 					"fieldList": [
@@ -57,7 +57,7 @@
 				"typeProperties": {
 					"notebookPath": "/Desafio_Caminhos (1)/Synapse_Move_landing_to_bronze",
 					"baseParameters": {
-						"source_directory": "empodera",
+						"source_directory": "empodera/",
 						"file_name": {
 							"value": "@activity('GetMetadata').output.childItems[0].name",
 							"type": "Expression"
