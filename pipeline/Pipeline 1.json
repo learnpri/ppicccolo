@@ -20,7 +20,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_container": "landing",
-							"ds_directory": "empodera/"
+							"ds_directory": "empodera/diabetes"
 						}
 					},
 					"fieldList": [
