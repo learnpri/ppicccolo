@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Get Metadata1",
+				"name": "Get Metadata",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -36,11 +36,11 @@
 				}
 			},
 			{
-				"name": "Notebook1",
+				"name": "Notebook",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Get Metadata1",
+						"activity": "Get Metadata",
 						"dependencyConditions": [
 							"Completed"
 						]
@@ -58,6 +58,7 @@
 					"notebookPath": "/Desafio_Caminhos (1)/Synapse_Move_landing_to_bronze",
 					"baseParameters": {
 						"source_directory": "empodera",
+						"file_name": "@activity('GetMetadata').output.childItems[0].name",
 						"table_name": "diabetes"
 					}
 				},
