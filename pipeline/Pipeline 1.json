@@ -34,6 +34,33 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Get Metadata1",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Desafio_Caminhos (1)/Synapse_Move_landing_to_bronze"
+				},
+				"linkedServiceName": {
+					"referenceName": "lsAzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
